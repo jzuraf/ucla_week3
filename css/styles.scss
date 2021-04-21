@@ -1,7 +1,54 @@
 body {
-	font-family: sans-serif;
+	max-width: 50%;
+	margin: auto;
+	background-image: url("../images/background.jpg");
+	background-size: 100%;
 
-	img {
-		width: 100%;
+	.box {
+  	display: flex;
+		flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+	}
+
+	.box img {
+		width: 50%;
+  	height: 50%;
+	}
+
+	.box h1 {
+		font-family: 'Garamond', serif;
+		border-bottom: dotted;
+		border-bottom-width: 5px;
+  	border-bottom-color: black;
+		padding-bottom: 10px;
+	}
+
+	.box p {
+		font-family: 'Garamond', serif;
+		text-align: center;
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+
+	.scroll {
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+
+	  justify-content: start;
+		border: solid;
+		border-width: 0px;
+		border-color: grey;
+		overflow-y: scroll;
+	}
+
+	.scroll h2 {
+		font-family: 'Helvetica', sans-serif;
+  	font-size: 16px;
+	}
+
+	.scroll p, ol, ul {
+		font-size: 15px;
 	}
 }
