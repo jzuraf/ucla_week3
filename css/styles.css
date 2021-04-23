@@ -1,38 +1,43 @@
 body {
-  max-width: 50%;
-  margin: auto;
-  background-image: url("../images/background.jpg");
-  background-size: 100%; }
-  body .box {
+  /*max-width: 50%;
+	margin: auto;*/
+  background-image: url("../images/hall.jpg");
+  background-size: 100%;
+  /* Wrapper */ }
+  body .wrapper {
+    margin: 15px; }
+  body .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; }
+  body .column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  body .box img {
-    width: 50%;
-    height: 50%; }
-  body .box h1 {
-    font-family: 'Garamond', serif;
-    border-bottom: dotted;
-    border-bottom-width: 5px;
-    border-bottom-color: black;
-    padding-bottom: 10px; }
-  body .box p {
-    font-family: 'Garamond', serif;
-    text-align: center;
-    font-size: 14px;
-    padding-bottom: 10px; }
-  body .scroll {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    border: solid;
-    border-width: 0px;
-    border-color: grey;
-    overflow-y: scroll; }
-  body .scroll h2 {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 16px; }
-  body .scroll p, body ol, body ul {
-    font-size: 15px; }
+    flex-basis: 100%;
+    flex: 1; }
+  body .left-column {
+    height: 200px; }
+  body .right-column {
+    height: 200px; }
+
+h1 {
+  font-family: 'Garamond', serif;
+  border-bottom: dotted;
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+  padding-bottom: 10px;
+  padding-top: 220px; }
+
+h2 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  padding-top: 20px; }
+
+p, ul, ol {
+  font-family: 'Garamond', serif;
+  text-align: left;
+  font-size: 14px; }
+
+ol {
+  padding-bottom: 100px; }
